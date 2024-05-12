@@ -9,6 +9,8 @@ Center the buttons on the pop up window and change the title to 'INST 326 Notebo
 Improvement # 3
 Make the window smaller so the text fits appropriately
 
+# NOTES: 
+
 1- Title: Tips for Debugging in Python
 Note: Debugging can be challenging when working with any type of program but here are some tips to improve the process in Python:
 
