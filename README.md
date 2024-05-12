@@ -9,11 +9,7 @@ Center the buttons on the pop up window and change the title to 'INST 326 Notebo
 Improvement # 3
 Make the window smaller so the text fits appropriately
 
-Print your notes
-In the cell below, print or copy your ten notes.
-
-add and run code here to print your ten notes
-Title: Tips for Debugging in Python
+1- Title: Tips for Debugging in Python
 Note: Debugging can be challenging when working with any type of program but here are some tips to improve the process in Python:
 
 Use a Debugger: Using tools like 'pdb' can help guide you through the execution of your code and help you identify where things went wrong.
@@ -22,14 +18,14 @@ Links: Python Debugger (pdb): https://docs.python.org/3/library/pdb.html Python 
 
 Tags: #Python #Debugging #ProgrammingTips #SoftwareDevelopment
 
-Title: Loading Data from a CSV File using Pandas in Python Code: import pandas as pd
+2- Title: Loading Data from a CSV File using Pandas in Python Code: import pandas as pd
 #Load data from a CSV file data = pd.read_csv('data.csv')
 
 #Display the first five rows of the DataFrame print("First five rows of the DataFrame:") print(data.head())
 
 Tags: #Python #DataScience #Pandas #DataLoading
 
-Title: Creating python class and objects Code: #Define a class class MyClass:
+3- Title: Creating python class and objects Code: #Define a class class MyClass:
 #Constructor method def init(self, x, z): self.x = x self.z = z
 
 #Method def my_method(self): return self.x + self.z
@@ -40,21 +36,21 @@ Title: Creating python class and objects Code: #Define a class class MyClass:
 
 Tags: Python, OOP, Classes, Objects
 
-Title: Method overriding in python Code: #Define a parent class class Parent: def method(self): print("Parent's method")
+4- Title: Method overriding in python Code: #Define a parent class class Parent: def method(self): print("Parent's method")
 #Define a child class inheriting from Parent class Child(Parent):
 
 #Override the method def method(self): print("Child's method")
 
 Tags: Python, OOP, Method Overriding, Inheritance
 
-Title: Reading python files more efficiently Code: #open file in read mode with open('file.txt', 'r') as file:
+5- Title: Reading python files more efficiently Code: #open file in read mode with open('file.txt', 'r') as file:
 #If the file is large, it's better to read it line by line for line in file: print(line.strip())
 
 #for files without text, use binary mode with open('binary_file.bin', 'rb') as file:
 
 Tags: #Python #FileIO #Efficiency
 
-Title: Reading Multiple Notes In a TXT File Code: with open("FileName.txt", "r") as file:
+6- Title: Reading Multiple Notes In a TXT File Code: with open("FileName.txt", "r") as file:
 #Read the lines from the file lines = file.readlines()
 
 #Iterate through the lines for i in range(0, len(lines), number of lines each note has:
@@ -69,7 +65,7 @@ print(title)
 print("Text:", text)
 Tags: reading_txt_files
 
-Title: Intro to Python Lists Code: # Creating a list fruits = ["apple", "banana", "cherry"]
+7- Title: Intro to Python Lists Code: # Creating a list fruits = ["apple", "banana", "cherry"]
 #Adding an item to the end of the list fruits.append("orange")
 
 #Adding an item at a specific position fruits.insert(1, "blueberry")
@@ -78,7 +74,7 @@ Title: Intro to Python Lists Code: # Creating a list fruits = ["apple", "banana"
 
 Links: https://docs.python.org/3/tutorial/datastructures.html Tags: #Python #Lists #ProgrammingBasics #DataStructures
 
-Title: Using Python Dictionaries to Lookup Data Code: # Creating a dictionary contact_info = {'John': '555-0101', 'Mary': '555-0123', 'Sue': '555-0178'}
+8- Title: Using Python Dictionaries to Lookup Data Code: # Creating a dictionary contact_info = {'John': '555-0101', 'Mary': '555-0123', 'Sue': '555-0178'}
 #Adding a new entry contact_info['Mike'] = '555-0222'
 
 #Accessing a value print("John's contact number:", contact_info['John'])
@@ -87,7 +83,7 @@ Title: Using Python Dictionaries to Lookup Data Code: # Creating a dictionary co
 
 Links: https://docs.python.org/3/tutorial/datastructures.html#dictionaries Tags: #Python #Dictionaries #DataStructures #EfficientLookup
 
-Title: Formatting Strings in Python with f-Strings Code: name = "Jane" age = 28
+9- Title: Formatting Strings in Python with f-Strings Code: name = "Jane" age = 28
 #Creating an f-string message = f"Hello, {name}. You are {age} years old."
 
 print(message) #Output: Hello, Jane. You are 28 years old.
@@ -96,7 +92,7 @@ print(message) #Output: Hello, Jane. You are 28 years old.
 
 Links: https://peps.python.org/pep-0498/ Tags: #Python #StringFormatting #fStrings #CodeEfficiency
 
-Title: Looping Techniques in Python Using for-loops and List Comprehensions Code: # Example of a for-loop to iterate through a list fruits = ["apple", "banana", "cherry"] for fruit in fruits: print(fruit)
+10- Title: Looping Techniques in Python Using for-loops and List Comprehensions Code: # Example of a for-loop to iterate through a list fruits = ["apple", "banana", "cherry"] for fruit in fruits: print(fruit)
 #Using a list comprehension to create a new list squares = [x**2 for x in range(10)] print(squares) # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 #Conditional list comprehension even_squares = [x**2 for x in range(10) if x % 2 == 0] print(even_squares) # Output: [0, 4, 16, 36, 64]
