@@ -1,15 +1,15 @@
 # INST-326-Project-04
-# imports
+#imports
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
 import datetime # one module for working with dates and times
 import json #this solution saves and opens json files. You may use a different file type and change the import accordingly
 
-# The MainWindow class creates a custom GUI window based on the tkinter window (tk.Tk)
-# It has an __init__() method, and three additional methods (new_note(), open_notebook(), and save_notebook())
-# These methods correspond to new, open, and save buttons in the window.
-# The new_note method calls the NoteForm class to create a new note form top level window.
+#The MainWindow class creates a custom GUI window based on the tkinter window (tk.Tk)
+#It has an __init__() method, and three additional methods (new_note(), open_notebook(), and save_notebook())
+#These methods correspond to new, open, and save buttons in the window.
+#The new_note method calls the NoteForm class to create a new note form top level window.
 
 class MainWindow(tk.Tk):
     def __init__(self):  #initialize the main window
@@ -113,13 +113,13 @@ class MainWindow(tk.Tk):
         return None
 
 
-# the NoteForm() class creates a Toplevel window that is a note form containing fields for
-# data entry for title, text, link, and tags. It also calculates a meta field with date, time, and timezone
-# the Noteform class has an __init__() method, and a submit() method that is called by a submit button
-# the class may contain additional methods to perform tasks like calculating the metadata, for example
+#the NoteForm() class creates a Toplevel window that is a note form containing fields for
+#data entry for title, text, link, and tags. It also calculates a meta field with date, time, and timezone
+#the Noteform class has an __init__() method, and a submit() method that is called by a submit button
+#the class may contain additional methods to perform tasks like calculating the metadata, for example
 
-# PROJECT 03 MODIFICATIONS
-# ADD NOTE_ID, AUTHOR, AND SNIPPET FIELDS TO NoteForm
+#PROJECT 03 MODIFICATIONS
+#ADD NOTE_ID, AUTHOR, AND SNIPPET FIELDS TO NoteForm
 
 class NoteForm(tk.Toplevel):
     
@@ -219,9 +219,9 @@ class NoteForm(tk.Toplevel):
         self.snippet.insert('1.0', note["snippet"]) # adds default text (useful during development)        
         
         # create our note meta field if you want to add edit functionality
-#         self.note_meta = tk.Entry(self.frame_main, width=80)
-#         self.note_meta.grid(padx=10, pady=10, row=5, column=1, sticky='w')
-#         self.note_meta.insert(0, note["meta"]) # adds default text (useful during development)
+        #self.note_meta = tk.Entry(self.frame_main, width=80)
+        #self.note_meta.grid(padx=10, pady=10, row=5, column=1, sticky='w')
+        #self.note_meta.insert(0, note["meta"]) # adds default text (useful during development)
         
 
         # note that the parameters for the Entry box and Text box are slightly different.
@@ -262,9 +262,9 @@ class NoteForm(tk.Toplevel):
         
         return None
 
-# The MakeNote class creates a new note object.
-# The MakeNote class is a subclass of the tk.Button class, 
-# which means each note instance has tk.Button functionality
+#The MakeNote class creates a new note object.
+#The MakeNote class is a subclass of the tk.Button class, 
+#which means each note instance has tk.Button functionality
 
 class MakeNote(tk.Button):
     def __init__(self, master=None, note_dict=None, notebook=None): # the arguments on this line
@@ -468,7 +468,7 @@ class MakeNote(tk.Button):
         b11.grid(padx=10, pady=10, row=9, column=1)
         
         
-# main execution
+#main execution
 
 if __name__ == '__main__':
     
