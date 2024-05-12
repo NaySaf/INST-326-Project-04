@@ -105,20 +105,20 @@ Tags: #Python #Loops #ListComprehensions #ProgrammingBasics #EfficientCoding
 
 # CODE: 
 #imports
-import tkinter as tk
-from tkinter import ttk
-from tkinter import filedialog
-import datetime # one module for working with dates and times
-import json #this solution saves and opens json files. You may use a different file type and change the import accordingly
+    import tkinter as tk
+    from tkinter import ttk
+    from tkinter import filedialog
+    import datetime # one module for working with dates and times
+    import json #this solution saves and opens json files. You may use a different file type and change the import accordingly
 
 #The MainWindow class creates a custom GUI window based on the tkinter window (tk.Tk)
 #It has an __init__() method, and three additional methods (new_note(), open_notebook(), and save_notebook())
 #These methods correspond to new, open, and save buttons in the window.
 #The new_note method calls the NoteForm class to create a new note form top level window.
 
-class MainWindow(tk.Tk):
-    def __init__(self):  #initialize the main window
-        super().__init__() # initialize it as a tkinter window
+    class MainWindow(tk.Tk):
+        def __init__(self):  #initialize the main window
+            super().__init__() # initialize it as a tkinter window
         
         self.geometry("600x600") # set the default window size #Nayab improvement 3: change window size
         self.title('INST 326 Notebook') #set the default window title   #Nayab improvement 2: change window name
