@@ -104,17 +104,18 @@ Links: https://docs.python.org/3/tutorial/controlflow.html#for-statements https:
 Tags: #Python #Loops #ListComprehensions #ProgrammingBasics #EfficientCoding
 
 # CODE: 
-#imports
+
+    #imports
     import tkinter as tk
     from tkinter import ttk
     from tkinter import filedialog
     import datetime # one module for working with dates and times
     import json #this solution saves and opens json files. You may use a different file type and change the import accordingly
 
-#The MainWindow class creates a custom GUI window based on the tkinter window (tk.Tk)
-#It has an __init__() method, and three additional methods (new_note(), open_notebook(), and save_notebook())
-#These methods correspond to new, open, and save buttons in the window.
-#The new_note method calls the NoteForm class to create a new note form top level window.
+    #The MainWindow class creates a custom GUI window based on the tkinter window (tk.Tk)
+    #It has an __init__() method, and three additional methods (new_note(), open_notebook(), and save_notebook())
+    #These methods correspond to new, open, and save buttons in the window.
+    #The new_note method calls the NoteForm class to create a new note form top level window.
 
     class MainWindow(tk.Tk):
         def __init__(self):  #initialize the main window
