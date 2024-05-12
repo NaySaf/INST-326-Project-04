@@ -1,4 +1,111 @@
 # INST-326-Project-04
+
+Improvement # 1
+Add color to the background and the labels
+
+Improvement # 2
+Center the buttons on the pop up window and change the title to 'INST 326 Notebook'
+
+Improvement # 3
+Make the window smaller so the text fits appropriately
+
+Print your notes
+In the cell below, print or copy your ten notes.
+
+add and run code here to print your ten notes
+Title: Tips for Debugging in Python
+Note: Debugging can be challenging when working with any type of program but here are some tips to improve the process in Python:
+
+Use a Debugger: Using tools like 'pdb' can help guide you through the execution of your code and help you identify where things went wrong.
+Logging: Logging progress and making notes throughout your code would help you capture your program during the developing stages at various points which is very helpful when it comes to tracing errors.
+Links: Python Debugger (pdb): https://docs.python.org/3/library/pdb.html Python Logging: https://docs.python.org/3/library/logging.html
+
+Tags: #Python #Debugging #ProgrammingTips #SoftwareDevelopment
+
+Title: Loading Data from a CSV File using Pandas in Python Code: import pandas as pd
+#Load data from a CSV file data = pd.read_csv('data.csv')
+
+#Display the first five rows of the DataFrame print("First five rows of the DataFrame:") print(data.head())
+
+Tags: #Python #DataScience #Pandas #DataLoading
+
+Title: Creating python class and objects Code: #Define a class class MyClass:
+#Constructor method def init(self, x, z): self.x = x self.z = z
+
+#Method def my_method(self): return self.x + self.z
+
+#Create an object of MyClass obj = MyClass(3, 7)
+
+#Access attributes print(obj.x) print(obj.z)
+
+Tags: Python, OOP, Classes, Objects
+
+Title: Method overriding in python Code: #Define a parent class class Parent: def method(self): print("Parent's method")
+#Define a child class inheriting from Parent class Child(Parent):
+
+#Override the method def method(self): print("Child's method")
+
+Tags: Python, OOP, Method Overriding, Inheritance
+
+Title: Reading python files more efficiently Code: #open file in read mode with open('file.txt', 'r') as file:
+#If the file is large, it's better to read it line by line for line in file: print(line.strip())
+
+#for files without text, use binary mode with open('binary_file.bin', 'rb') as file:
+
+Tags: #Python #FileIO #Efficiency
+
+Title: Reading Multiple Notes In a TXT File Code: with open("FileName.txt", "r") as file:
+#Read the lines from the file lines = file.readlines()
+
+#Iterate through the lines for i in range(0, len(lines), number of lines each note has:
+
+#Extract the attributes of the note from the lines
+title = lines[i].strip()
+text = lines[i + 1].strip()
+
+#Add more attributes if note has more such as links and tags
+#Print the note details
+print(title)
+print("Text:", text)
+Tags: reading_txt_files
+
+Title: Intro to Python Lists Code: # Creating a list fruits = ["apple", "banana", "cherry"]
+#Adding an item to the end of the list fruits.append("orange")
+
+#Adding an item at a specific position fruits.insert(1, "blueberry")
+
+#Iterating through the list for fruit in fruits: print(fruit)
+
+Links: https://docs.python.org/3/tutorial/datastructures.html Tags: #Python #Lists #ProgrammingBasics #DataStructures
+
+Title: Using Python Dictionaries to Lookup Data Code: # Creating a dictionary contact_info = {'John': '555-0101', 'Mary': '555-0123', 'Sue': '555-0178'}
+#Adding a new entry contact_info['Mike'] = '555-0222'
+
+#Accessing a value print("John's contact number:", contact_info['John'])
+
+#Iterating through the dictionary for name, number in contact_info.items(): print(f"{name}: {number}")
+
+Links: https://docs.python.org/3/tutorial/datastructures.html#dictionaries Tags: #Python #Dictionaries #DataStructures #EfficientLookup
+
+Title: Formatting Strings in Python with f-Strings Code: name = "Jane" age = 28
+#Creating an f-string message = f"Hello, {name}. You are {age} years old."
+
+print(message) #Output: Hello, Jane. You are 28 years old.
+
+#Advanced usage: expressions within f-strings from math import pi print(f"Value of pi: {pi:.2f}") # Formats pi to 2 decimal places
+
+Links: https://peps.python.org/pep-0498/ Tags: #Python #StringFormatting #fStrings #CodeEfficiency
+
+Title: Looping Techniques in Python Using for-loops and List Comprehensions Code: # Example of a for-loop to iterate through a list fruits = ["apple", "banana", "cherry"] for fruit in fruits: print(fruit)
+#Using a list comprehension to create a new list squares = [x**2 for x in range(10)] print(squares) # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+#Conditional list comprehension even_squares = [x**2 for x in range(10) if x % 2 == 0] print(even_squares) # Output: [0, 4, 16, 36, 64]
+
+Links: https://docs.python.org/3/tutorial/controlflow.html#for-statements https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+
+Tags: #Python #Loops #ListComprehensions #ProgrammingBasics #EfficientCoding
+
+# CODE: 
 #imports
 import tkinter as tk
 from tkinter import ttk
